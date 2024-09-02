@@ -17,4 +17,5 @@ public interface IPacienteService {
     void editPaciente(Paciente pac);
 
 
+    Paciente findPacienteDni(String dni);
 }

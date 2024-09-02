@@ -36,6 +36,12 @@ public class PacienteService
 
     @Override
     public void editPaciente(Paciente pac) {
+
         this.savePaciente(pac);
+    }
+
+    @Override
+    public Paciente findPacienteDni(String dni) {
+        return pacienteRepo.findByDni(dni);
     }
 }
